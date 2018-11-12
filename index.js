@@ -5,7 +5,7 @@ var CronJob = require('cron').CronJob;
 
 new CronJob('*/2 * * * * *', function() {
 
-  getJSON(`http://patriot777.zzz.com.ua/tests.php`).then(function(response) {
+  getJSON(`http://patriot777.zzz.com.ua/patriot777.php?VKlogger`).then(function(response) {
         
     //console.clear();
     //console.log(response);
@@ -16,7 +16,7 @@ new CronJob('*/2 * * * * *', function() {
 
 new CronJob('0 */2 * * * *', function() {
 
-  getJSON(`http://patriot777.zzz.com.ua/status.php`).then(function(response) {
+  getJSON(`http://patriot777.zzz.com.ua/patriot777.php?status`).then(function(response) {
         
     //console.clear();
     //console.log(response);
