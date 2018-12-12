@@ -17,7 +17,7 @@ new CronJob('*/2 * * * * *', function() {
 
 }, null, true, 'Europe/Moscow');
 
-new CronJob('*/5 * * * * *', function() {
+new CronJob('*/4 * * * * *', function() {
 
   getJSON(`http://patriot777.zzz.com.ua/megabot.php?send_msg`).then(function(response) {
     //console.clear();
