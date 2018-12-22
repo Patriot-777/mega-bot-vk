@@ -38,9 +38,9 @@ new CronJob('0 */2 * * * *', function() {
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
 
-  getJSON(`http://patriot777.zzz.com.ua/index.php`).then(function(response) { 
-    //console.clear();
-    //console.log(response);
- }).catch(function(error) {console.log(error);}); 
+//   getJSON(`http://patriot777.zzz.com.ua/index.php`).then(function(response) { 
+//     //console.clear();
+//     //console.log(response);
+//  }).catch(function(error) {console.log(error);}); 
 
 }, null, true, 'Europe/Moscow');
