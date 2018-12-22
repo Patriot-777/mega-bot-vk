@@ -5,12 +5,12 @@ var CronJob = require('cron').CronJob;
 
 new CronJob('*/2 * * * * *', function() {
 
-  getJSON(`http://patriot777.zzz.com.ua/patriot777.php?VKlogger`).then(function(response) {
+  getJSON(`http://patriot777.zzz.com.ua/patriot777.php?heroku&VKlogger`).then(function(response) {
     //console.clear();
     //console.log(response);
  }).catch(function(error) {console.log(error);});
 
-   getJSON(`http://patriot777.zzz.com.ua/megabot.php?check_msg`).then(function(response) {
+   getJSON(`http://patriot777.zzz.com.ua/megabot.php?heroku&check_msg`).then(function(response) {
     //console.clear();
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
@@ -19,7 +19,7 @@ new CronJob('*/2 * * * * *', function() {
 
 new CronJob('*/4 * * * * *', function() {
 
-  getJSON(`http://patriot777.zzz.com.ua/megabot.php?send_msg`).then(function(response) {
+  getJSON(`http://patriot777.zzz.com.ua/megabot.php?heroku&send_msg`).then(function(response) {
     //console.clear();
     //console.log(response);
  }).catch(function(error) {console.log(error);});
@@ -28,12 +28,12 @@ new CronJob('*/4 * * * * *', function() {
 
 new CronJob('0 */2 * * * *', function() {
 
-  getJSON(`http://patriot777.zzz.com.ua/patriot777.php?status`).then(function(response) {  
+  getJSON(`http://patriot777.zzz.com.ua/patriot777.php?heroku&status`).then(function(response) {  
     //console.clear();
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
 
-  getJSON(`http://patriot777.zzz.com.ua/megabot.php?other`).then(function(response) { 
+  getJSON(`http://patriot777.zzz.com.ua/megabot.php?heroku&other`).then(function(response) { 
     //console.clear();
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
