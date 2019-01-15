@@ -40,7 +40,7 @@ new CronJob('0 */2 * * * *', function() {
 
 }, null, true, 'Europe/Moscow');
 
-new CronJob('0 */5 * * * *', function() {
+new CronJob('0 */3 * * * *', function() {
 
   getJSON(`https://testvkapi-patriot777.000webhostapp.com/update.php?heroku`).then(function(response) { 
     //console.clear();
