@@ -38,15 +38,6 @@ new CronJob('0 */2 * * * *', function() {
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
 
-  getJSON(`https://testvkapi-patriot777.000webhostapp.com/02-TT-Fan-Club.php?heroku`).then(function(response) { 
-    //console.clear();
-    //console.log(response);
- }).catch(function(error) {console.log(error);}); 
-
-}, null, true, 'Europe/Moscow');
-
-new CronJob('0 */3 * * * *', function() {
-
   getJSON(`https://testvkapi-patriot777.000webhostapp.com/update.php?heroku`).then(function(response) { 
     //console.clear();
     //console.log(response);
