@@ -33,7 +33,7 @@ new CronJob('0 */2 * * * *', function() {
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
 
- getJSON(`https://yaroslav-andreev.ru/megabot/update.php?heroku`).then(function(response) { 
+ getJSON(`https://yaroslav-andreev.ru/oblojki/update.php?heroku`).then(function(response) { 
     //console.clear();
     //console.log(response);
  }).catch(function(error) {console.log(error);}); 
