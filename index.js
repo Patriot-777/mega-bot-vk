@@ -2,7 +2,7 @@ var getJSON = require('get-json');
 
 var CronJob = require('cron').CronJob;
 
-new CronJob('*/4 * * * * *', function() {
+new CronJob('*/2 * * * * *', function() {
 
   getJSON(`https://yaroslav-andreev.ru/megabot/megabot.php?heroku&send_msg`).then(function(response) {
     //console.clear();
